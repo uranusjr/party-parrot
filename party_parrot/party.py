@@ -46,7 +46,11 @@ def main(screen):
 
 
 def party():
-    Screen.wrapper(main)
+    try:
+        Screen.wrapper(main)
+    except KeyboardInterrupt:
+        pass
+
 
 if __name__ == '__main__':
     party()
